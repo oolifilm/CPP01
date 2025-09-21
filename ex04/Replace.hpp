@@ -1,30 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Weapon.hpp                                         :+:      :+:    :+:   */
+/*   Replace.hpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: leaugust <leaugust@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/13 07:53:41 by leaugust          #+#    #+#             */
-/*   Updated: 2025/09/21 15:12:50 by leaugust         ###   ########.fr       */
+/*   Created: 2025/09/11 11:55:12 by leaugust          #+#    #+#             */
+/*   Updated: 2025/09/21 15:48:45 by leaugust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef WEAPON_HPP
-# define WEAPON_HPP
+#ifndef REPLACE_HPP
+#define REPLACE_HPP
 
-# include <string>
+#include <string>
+#include <fstream>
+#include <sstream>
 #include <iostream>
 
-class Weapon {
-    public:
-	    Weapon(const std::string& type);
-      ~Weapon();
-      const std::string& getType() const;
-      void setType(const std::string& newType);
+class Replace
+{
+public:
+    Replace(const std::string& filename, const std::string& s1, const std::string& s2);
+    ~Replace();
 
-    private:
-        std::string _type;
+    bool process() const;
+
+private:
+    std::string _filename;
+    std::string _s1;
+    std::string _s2;
 };
 
 #endif

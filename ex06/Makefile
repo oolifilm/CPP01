@@ -6,11 +6,11 @@
 #    By: leaugust <leaugust@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/08/03 05:35:45 by leaugust          #+#    #+#              #
-#    Updated: 2025/09/21 14:33:24 by leaugust         ###   ########.fr        #
+#    Updated: 2025/09/21 17:57:35 by leaugust         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = ZombieHorde
+NAME = harlFilter
 CC	 = c++
 CFLAGS = -Wall -Werror -Wextra -std=c++98
 
@@ -25,14 +25,14 @@ BLUE		= \033[38;5;053m
 UP			= \033[A
 CUT			= \033[K
 
-SRC_FILES = main.cpp Zombie.cpp zombieHorde.cpp
+SRC_FILES = main.cpp Harl.cpp
 OBJ_FILES = $(SRC_FILES:.cpp=.o)
 
 SRC_PATH = $(addprefix $(SRC_DIR), $(SRC_FILES))
 OBJ_PATH = $(addprefix $(OBJ_DIR), $(OBJ_FILES))
 
 all: $(NAME)
-	@printf "$(BLUE)Welcome to EX01 of CPP01\n$(RESET)"
+	@printf "$(BLUE)Welcome to EX06 of CPP01\n$(RESET)"
 
 $(NAME): $(OBJ_PATH)
 	@echo "$(PURPLE)Compiling [$(NAME)]...$(RESET)"
@@ -50,15 +50,15 @@ $(OBJ_DIR)%.o: $(SRC_DIR)%.cpp
 clean:
 	@if [ -d "$(OBJ_DIR)" ]; then \
 	rm -rf $(OBJ_DIR); \
-	echo "$(BLUE)Deleting all objects from /ex01...$(RESET)"; else \
-	echo "No objects to remove from /ex01."; \
+	echo "$(BLUE)Deleting all objects from /ex06...$(RESET)"; else \
+	echo "No objects to remove from /ex06."; \
 	fi;
 
 fclean: clean
 	@if [ -f "$(NAME)" ]; then \
 	rm -f $(NAME); \
-	echo "$(BLUE)Deleting $(NAME) from ex01...$(RESET)"; else \
-	echo "No Executable to remove from ex01."; \
+	echo "$(BLUE)Deleting $(NAME) from ex06...$(RESET)"; else \
+	echo "No Executable to remove from ex06."; \
 	fi;
 
 re: fclean all

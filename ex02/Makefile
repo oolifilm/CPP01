@@ -6,12 +6,12 @@
 #    By: leaugust <leaugust@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/08/03 05:35:45 by leaugust          #+#    #+#              #
-#    Updated: 2025/08/13 07:44:33 by leaugust         ###   ########.fr        #
+#    Updated: 2025/09/21 14:33:13 by leaugust         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = Brain
-CC	 = g++
+CC	 = c++
 CFLAGS = -Wall -Werror -Wextra -std=c++98
 
 SRC_DIR =

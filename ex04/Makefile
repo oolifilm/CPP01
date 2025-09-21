@@ -6,12 +6,12 @@
 #    By: leaugust <leaugust@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/08/03 05:35:45 by leaugust          #+#    #+#              #
-#    Updated: 2025/08/13 08:21:46 by leaugust         ###   ########.fr        #
+#    Updated: 2025/09/11 11:55:39 by leaugust         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = Replace
-CC	 = g++
+CC	 = c++
 CFLAGS = -Wall -Werror -Wextra -std=c++98
 
 SRC_DIR =
@@ -25,7 +25,7 @@ BLUE		= \033[38;5;053m
 UP			= \033[A
 CUT			= \033[K
 
-SRC_FILES = main.cpp
+SRC_FILES = main.cpp Replace.cpp
 OBJ_FILES = $(SRC_FILES:.cpp=.o)
 
 SRC_PATH = $(addprefix $(SRC_DIR), $(SRC_FILES))
