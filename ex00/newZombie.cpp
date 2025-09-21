@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   newZombie.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: leanne <leanne@student.42.fr>              +#+  +:+       +#+        */
+/*   By: leaugust <leaugust@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/13 05:35:26 by leaugust          #+#    #+#             */
-/*   Updated: 2025/09/19 16:15:18 by leanne           ###   ########.fr       */
+/*   Updated: 2025/09/21 18:25:41 by leaugust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-Zombie* newZombie(const std::string& name) {
+Zombie* newZombie(std::string name) {
     return new Zombie(name);
 }

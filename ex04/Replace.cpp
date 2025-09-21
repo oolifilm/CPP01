@@ -6,7 +6,7 @@
 /*   By: leaugust <leaugust@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/11 11:57:00 by leaugust          #+#    #+#             */
-/*   Updated: 2025/09/21 16:19:50 by leaugust         ###   ########.fr       */
+/*   Updated: 2025/09/21 18:42:46 by leaugust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,13 +25,17 @@ bool Replace::process() const {
     }
     std::ifstream input(_filename.c_str());
     if (!input) {
-        std::cerr << "Error: File won't open." << _filename << std::endl;
+        std::cerr << "Error: File won't open." << std::endl;
         return false;
     }
     std::ostringstream buffer;
     buffer << input.rdbuf();
     std::string content = buffer.str();
     input.close();
+    if (content.empty()) {
+        std::cerr << "Error: File is empty." << std::endl;
+        return false;
+        }
     std::string result;
     size_t pos = 0;
     size_t found;

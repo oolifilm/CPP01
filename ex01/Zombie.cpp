@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Zombie.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: leanne <leanne@student.42.fr>              +#+  +:+       +#+        */
+/*   By: leaugust <leaugust@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/13 07:04:27 by leaugust          #+#    #+#             */
-/*   Updated: 2025/09/21 12:07:27 by leanne           ###   ########.fr       */
+/*   Updated: 2025/09/21 18:34:45 by leaugust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,6 @@
 #include <iostream>
 
 Zombie::Zombie() : _name("Unnamed") {
-}
-
-Zombie::Zombie(const std::string& name) : _name(name){
-    
 }
 
 Zombie::~Zombie() {

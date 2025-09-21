@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   randomChump.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: leanne <leanne@student.42.fr>              +#+  +:+       +#+        */
+/*   By: leaugust <leaugust@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/13 05:35:29 by leaugust          #+#    #+#             */
-/*   Updated: 2025/09/19 16:15:37 by leanne           ###   ########.fr       */
+/*   Updated: 2025/09/21 18:25:49 by leaugust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-void randomChump(const std::string& name) {
+void randomChump(std::string name) {
     Zombie z(name);
     z.announce();
 }
