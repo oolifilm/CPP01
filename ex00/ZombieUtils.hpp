@@ -1,18 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   randomChump.cpp                                    :+:      :+:    :+:   */
+/*   ZombieUtils.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: leanne <leanne@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/13 05:35:29 by leaugust          #+#    #+#             */
-/*   Updated: 2025/09/19 16:15:37 by leanne           ###   ########.fr       */
+/*   Created: 2025/08/13 05:35:34 by leaugust          #+#    #+#             */
+/*   Updated: 2025/09/19 16:15:30 by leanne           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#ifndef ZOMBIEUTILS_HPP
+# define ZOMBIEUTILS_HPP
 
-void randomChump(const std::string& name) {
-    Zombie z(name);
-    z.announce();
-}
+# include <string>
+
+Zombie* newZombie(const std::string& name);
+void randomChump(const std::string& name);
+
+#endif

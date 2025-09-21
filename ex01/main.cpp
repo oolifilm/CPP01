@@ -3,20 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: leaugust <leaugust@student.42.fr>          +#+  +:+       +#+        */
+/*   By: leanne <leanne@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/13 07:08:46 by leaugust          #+#    #+#             */
-/*   Updated: 2025/08/13 07:31:33 by leaugust         ###   ########.fr       */
+/*   Updated: 2025/09/21 12:28:54 by leanne           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
+#include "ZombieUtils.hpp"
 #include <iostream>
 
-Zombie* zombieHorde(int N, std::string name);
-
 int main() {
-    int N = 10;
+    int N = 2147483647;
     std::string name = "Zombie";
 
     Zombie* horde = zombieHorde(N, name);

@@ -3,15 +3,15 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: leaugust <leaugust@student.42.fr>          +#+  +:+       +#+         #
+#    By: leanne <leanne@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/08/03 05:35:45 by leaugust          #+#    #+#              #
-#    Updated: 2025/08/13 06:56:41 by leaugust         ###   ########.fr        #
+#    Updated: 2025/09/08 18:13:05 by leanne           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = Zombie
-CC	 = g++
+CC	 = c++
 CFLAGS = -Wall -Werror -Wextra -std=c++98
 
 SRC_DIR =

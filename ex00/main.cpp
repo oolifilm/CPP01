@@ -3,17 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: leaugust <leaugust@student.42.fr>          +#+  +:+       +#+        */
+/*   By: leanne <leanne@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/13 05:35:24 by leaugust          #+#    #+#             */
-/*   Updated: 2025/08/13 05:53:45 by leaugust         ###   ########.fr       */
+/*   Updated: 2025/09/19 15:59:13 by leanne           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
-
-Zombie* newZombie(std::string name);
-void randomChump(std::string name);
+#include "ZombieUtils.hpp"
 
 int main() {
     Zombie* heapZombie = newZombie("Heap");
