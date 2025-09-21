@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: leanne <leanne@student.42.fr>              +#+  +:+       +#+        */
+/*   By: leaugust <leaugust@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/13 07:08:46 by leaugust          #+#    #+#             */
-/*   Updated: 2025/09/21 12:28:54 by leanne           ###   ########.fr       */
+/*   Updated: 2025/09/21 13:37:04 by leaugust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 #include <iostream>
 
 int main() {
-    int N = 2147483647;
+    int N = 10;
     std::string name = "Zombie";
 
     Zombie* horde = zombieHorde(N, name);
