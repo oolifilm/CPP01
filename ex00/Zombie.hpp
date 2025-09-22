@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Zombie.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: leanne <leanne@student.42.fr>              +#+  +:+       +#+        */
+/*   By: leaugust <leaugust@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/13 05:35:34 by leaugust          #+#    #+#             */
-/*   Updated: 2025/09/19 16:14:46 by leanne           ###   ########.fr       */
+/*   Updated: 2025/09/22 20:09:19 by leaugust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,8 @@ class Zombie
   private:
 	std::string _name;
 };
+
+Zombie* newZombie(std::string name);
+void randomChump(std::string name);
 
 #endif

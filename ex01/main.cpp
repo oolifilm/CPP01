@@ -6,12 +6,11 @@
 /*   By: leaugust <leaugust@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/13 07:08:46 by leaugust          #+#    #+#             */
-/*   Updated: 2025/09/21 13:37:04 by leaugust         ###   ########.fr       */
+/*   Updated: 2025/09/22 20:09:37 by leaugust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
-#include "ZombieUtils.hpp"
 #include <iostream>
 
 int main() {
